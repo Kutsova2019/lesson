@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>hw09</title>
+</head>
+<body>
+	<script>
+		// первая часть
+		
+		 function counter (num){
+			let index = 0;
+
+			return function (num) {
+				return index += num; 
+
+			}
+		}
+		 let counterOne = counter();
+		 console.log(counterOne(3));
+		 console.log(counterOne(5));
+		 console.log(counterOne(20));
+
+		 // вторая часть
+		// function counter (stepA){
+		// 	let index = 0;
+		// 	let step = stepA;
+			
+
+
+		// 	return function (stepA) {
+		// 		return index += step;
+				
+			
+		// 	}
+		// }
+		//  let counterOne = counter(3);
+		//  console.log(counterOne());
+		 
+	</script>
+
+</body>
+</html>
